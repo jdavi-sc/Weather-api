@@ -1,0 +1,16 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(144, 77, 245);
+}
+
+@media screen and (min-width: 992px) {
+    .BackgroundColor {
+        margin: 4rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: rgba(193, 187, 247, 0.8); 
+    }
+}
