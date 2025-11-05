@@ -24,24 +24,25 @@
 </head>
 
 <body>
+  <main class="content">
+    <div class="container-principal">
+      <h1>Temperatura Atual</h1>
 
-  <div class="BackgroundColor">
-    <h1 class="">Temperatura Atual</h1>
+      <span id="city-name"> <!-- nome da cidade --> </span>
+       <span id="temp-c"> <!-- temperatura em celsius --> </span>
+      <span id="temp-f"> <!-- temperatura em fahrenheit --> </span>
 
-    <span id="city-name"> <!-- nome da cidade --> </span>
-    <span id="temp-c"> °C<!-- temperatura em celsius --> </span>
-    <span id="temp-f"> °F<!-- temperatura em fahrenheit --> </span>
+      <button id="update">Atualizar</button>
+    </div>
+  </main>
 
-    <button id="update">Atualizar</button>
-  </div>
-
-  <div>
+  <div class="imagemApi">
     <a href="https://www.weatherapi.com/" title="Free Weather API">
       <img src='https://cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com">
     </a>
   </div>
 
-  <script src="./assets/js/weather-api.js"></script>
+  <script src="./assets/js/weather-api.js" defer></script>
 </body>
 
 </html>

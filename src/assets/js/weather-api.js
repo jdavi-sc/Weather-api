@@ -1,14 +1,19 @@
-let city = "Paris";
+let city = "São Paulo";
 const apiKey = "fa3e9e1bfb16414ca22210149250111";
 const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
 /**
  * Faz uma requisição à API WeatherAPI para obter a temperatura atual
- * em graus Celsius e Fahrenheit.
+ * em graus Celsius e Fahrenheit. Em seguida substitui os valores dentro do html
+ * para o nome, temperatura celsius e fahrenheint.
  *
  * @author José Davi
- * @param {string} url - http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}
- * @returns {Promise<void>} Retorna uma Promise.
+ * @function getWeather - retorna a temperatura
+ * @constant cityName - armazena o valor do html através do ID
+ * @constant tempC - armazena o valor do html através do ID
+ * @constant tempF - armazena o valor do html através do ID
+ * @constant {string} url - http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}
+ * @returns {Promise<void>} - Retorna uma Promise.
  */
 
 const getWeather = async (url) => {
